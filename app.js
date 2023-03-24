@@ -6,7 +6,7 @@ var secItem = document.querySelector(".sec")
 var count = () => {
     var futureDate = new Date("23 march 2023");
     var currentDate = new Date();
-    var myDate = futureDate - currentDate;
+    var myDate = currentDate - futureDate;
 
     var days = Math.floor(myDate/1000/60/60/24);
     var hours = Math.floor(myDate/1000/60/60) % 24;
